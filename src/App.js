@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
+import { Routes,Route } from 'react-router-dom'
+import Home from './Componentsheader.js/Home'
+import Bollywood from './Componentsheader.js/Bollywood'
+import Technology from './Componentsheader.js/Technology'
+import Hollywood from './Componentsheader.js/Hollywood'
+import Fitness from './Componentsheader.js/Fitness'
+import Food from './Componentsheader.js/Food'
 import './App.css';
+import {ProvideData} from "./Componentsheader.js/ContextApi";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1><span>The</span>Siren</h1>
+     <ProvideData>
+      <Routes>
+        
+            <Route path='/' element={<Home />} />
+             <Route path='/b' element={<Bollywood />} />
+             <Route path='/t' element={<Technology />} />
+             <Route path='/h' element={<Hollywood />} />
+             <Route path='/f' element={<Fitness />} />
+             <Route path='/food' element={<Food />} />
+        
+        
+        </Routes>
+        </ProvideData>
     </div>
   );
 }

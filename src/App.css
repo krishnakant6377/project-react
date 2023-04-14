@@ -1,38 +1,57 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{background-image: linear-gradient(rgb(243, 187, 84) 10%,pink,rgb(157, 157, 248),rgb(147, 250, 147));
+font-family: 'Times New Roman', Times, serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.new{background-color: crimson;
+text-decoration: none;
+color: antiquewhite;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.texts{
+  font-size: 2rem;
+  font-family:'Times New Roman', Times, serif;
+  color:chocolate
+}
+.new:hover{background-color: rgb(75, 255, 150);
+  text-decoration: none;
+  color: antiquewhite;}
+ul{display: flex;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+list-style-type: none;
+text-decoration: none;}
+li{margin: 15px;
+font-size: 20px;}
+span{
+writing-mode:vertical-rl;
+background-color: cadetblue;
+rotate: 180deg;}
+Link{text-decoration: none;}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen   and (max-width:1170px) {
+  body{background-image: linear-gradient(rgb(243, 187, 84) 10%,pink,rgb(157, 157, 248),rgb(147, 250, 147));
+    font-family: 'Times New Roman', Times, serif;}
+    .texts{
+      font-size: 1rem;
+      font-family:'Times New Roman', Times, serif;
+      color:chocolate
+    }
+  .new{background-color: crimson;
+    text-decoration: none;
+    color: antiquewhite;
+    }
+    .new:hover{background-color: rgb(75, 255, 150);
+      text-decoration: none;
+      color: antiquewhite;}
+      ul{display: flex;
+        flex-wrap: wrap;
+        /* text-align: center;
+        justify-content: center; */
+      list-style-type: none;
+      text-decoration: none;}
+      li{margin: 10px;
+        font-size: 3.4rem;}
+  
 }
